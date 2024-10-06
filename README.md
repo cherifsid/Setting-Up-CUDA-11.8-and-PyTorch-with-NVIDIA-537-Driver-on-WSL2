@@ -134,6 +134,23 @@ This tutorial helps you install **WSL2**, **NVIDIA 537 driver**, **CUDA 11.8**, 
 
 ---
 
+### Step 6: Install cuDNN
+
+1. Download the cuDNN package for CUDA 11.8. Once downloaded, run the following commands to install cuDNN:
+
+    ```bash
+    sudo dpkg -i cudnn-local-repo-ubuntu2204-8.9.7.29_1.0-1_amd64.deb
+    sudo apt-get update
+    sudo apt-get install libcudnn8
+    ```
+2. Verify that cuDNN is installed:
+    ```bash
+    dpkg -l | grep libcudnn
+
+    ```
+
+---
+
 ### Troubleshooting
 - Ensure you have the correct NVIDIA driver (537).
 - Check that your `~/.bashrc` file has the correct environment variables for CUDA.
