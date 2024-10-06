@@ -7,6 +7,8 @@ This tutorial helps you install **WSL2**, **NVIDIA 537 driver**, **CUDA 11.8**, 
 - NVIDIA GPU supported by CUDA 11.8
 - Administrator privileges
 
+---
+
 ### Step 1: Install WSL2
 
 1. Open PowerShell as Administrator and run:
@@ -32,6 +34,20 @@ This tutorial helps you install **WSL2**, **NVIDIA 537 driver**, **CUDA 11.8**, 
     ```
 
 5. Launch your Linux distribution (e.g., **Ubuntu**) and update the package list:
+
+    ```bash
+    sudo apt update && sudo apt upgrade
+    ```
+
+---
+
+### Step 1.1: Install Ubuntu 22.04 from Microsoft Store
+
+1. Open the **Microsoft Store**.
+2. In the search bar, type **Ubuntu 22.04** and select the app from the list.
+3. Click **Install** to install the latest Ubuntu 22.04 distribution.
+4. After installation, open the app to complete the Ubuntu setup.
+5. Once Ubuntu is running, update the package manager:
 
     ```bash
     sudo apt update && sudo apt upgrade
@@ -121,3 +137,14 @@ This tutorial helps you install **WSL2**, **NVIDIA 537 driver**, **CUDA 11.8**, 
 ### Troubleshooting
 - Ensure you have the correct NVIDIA driver (537).
 - Check that your `~/.bashrc` file has the correct environment variables for CUDA.
+
+---
+
+### Additional Resources
+
+For more information and guidance on WSL2 setup and usage, refer to the official Microsoft documentation:
+- [WSL Installation Guide](https://docs.microsoft.com/en-us/windows/wsl/install)
+- [CUDA on WSL Installation Guide](https://docs.nvidia.com/cuda/wsl-user-guide/index.html)
+
+You can also find more information about installing Ubuntu from the Microsoft Store:
+- [Ubuntu on Microsoft Store](https://ubuntu.com/wsl)
