@@ -142,7 +142,7 @@ This tutorial helps you install **WSL2**, **NVIDIA 537 driver**, **CUDA 11.8**, 
 ### Important Note:
 -If you have successfully verified the NVIDIA driver installation in PowerShell using nvidia-smi but encounter a segmentation fault in WSL, this issue is likely due to mismatched versions of the driver or CUDA packages between Windows and WSL2.
 
-- To resolve this issue, ensure that all the drivers and packages, including the NVIDIA driver (537), CUDA version (11.8), and related packages, match exactly as outlined in this tutorial.
+-To resolve this issue, ensure that all the drivers and packages, including the NVIDIA driver (537), CUDA version (11.8), and related packages, match exactly as outlined in this tutorial.
 
 ---
 
